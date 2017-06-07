@@ -1,0 +1,78 @@
+body {
+  margin-top:10px !important;
+}
+
+.tagline {
+  line-height: 2em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empty-container {
+  height:calc(100vh - 375px);
+}
+.empty-message {
+  margin:0 auto !important;
+}
+
+.new-note-input {
+  border:1px inset rgba(200, 200, 200, 0.35) !important;
+}
+
+.navbar-brand {
+  color:#f2f2f2 !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:white !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color:#434A54 !important;
+  cursor: pointer;
+}
+
+.badge.dark {
+  background-color: #434A54;
+  padding: 5px 10px;
+}
+
+.badge.light {
+  background-color: #656D78 !important;
+  padding: 5px 10px;
+}
+
+.note-icon {
+  font-size: 3rem;
+  padding: 0 10px 3px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.note-img {
+  height:30px;
+  border-radius: 100%;
+}
+
+.icon-red {
+  background: #ED5565;
+  color: #f2f2f2;
+}
+
+.icon-yellow {
+  background: #FFCE54;
+  color: #f2f2f2;
+}
+
+.icon-red:hover {
+  background: #DA4453;
+  color: #F5F7FA;
+}
+
+.icon-yellow:hover {
+  background: #F6BB42;
+  color: #F5F7FA;
+}

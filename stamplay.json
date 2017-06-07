@@ -1,0 +1,10 @@
+{
+  "appId": "pjgfirstapp",
+  "apiKey": "c9bf5c893e7ea0aa7e9aede3072d61739c4cb09f27d483cf3182ecf382805fd6",
+  "public": "build",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

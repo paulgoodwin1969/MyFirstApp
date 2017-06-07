@@ -1,0 +1,45 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 text-center">
+      <h3>Stamplay Angular Seed Project</h3>
+      <p class="lead tagline">A Starter Kit Built with <a href="http://angularjs.org" target="_blank"><span class="label label-default h6">AngularJS</span></a> <a href="https://getbootstrap.com" target="_blank"><span class="label label-default h6">Bootstrap 3</span></a> and <a href="https://stamplay.com" target="_blank"><span class="label label-default h6">Stamplay</span></a></p>
+    </div>
+  </div>
+</div>
+<div class="row notes">
+  <div class="col-xs-12">
+    <form class="col-sm-6 col-sm-offset-3" ng-submit="note.createNote()">
+      <div class="input-group well">
+      <input type="text" class="form-control new-note-input" ng-model="note.new" placeholder="Add A Note...">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="submit">Add</button>
+      </span>
+    </div>
+    </form>
+  </div>
+  <div class="col-xs-12">
+    <div ng-if="note.notes.length === 0" class="flex empty-container">
+      <div class="lead empty-message">Look like you don't have any notes. Maybe add one.</div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-lg-3" ng-repeat="item in note.notes track by $index">
+      <div class="panel panel-default">
+        <div class="panel-heading flex">
+          by: <span class="badge light">{{ item.owner.email || 'anonymous' }}</span>
+        </div>
+        <div class="panel-body">
+          <blockquote>
+            {{ item.body }}
+          </blockquote>
+        </div>
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-xs-12 flex">
+              <a class="note-icon icon-yellow" ng-click="note.openEdit(item, $index)">&#x270E;</a>
+              <a class="note-icon icon-red" ng-click="note.deleteNote(item, $index)">&#8855;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
